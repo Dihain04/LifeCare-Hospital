@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+
+    <!--Linking of external files for styling and icons-->
+    <link rel="stylesheet" href="styles/consultation.css">
+    <link rel="icon" type="image/LIFECare HOSPITAL.png" href="Images/LIFECare HOSPITAL.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzOd9kz1D6k2K7pT4omRhqT2g64om5Ef3gGdE1X5uQoU5SNWadf5/A6kAf6v0BZcqjV0G4WhQuFvFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <!--Header section for logo and contact details-->
+    <header>
+        <div class="header">
+            <!--Logo and hospital name-->
+            <div class="logo-item">
+                <div class="logo-wrapper">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="Hospital Logo" class="logo">
+                    <h1><a href="index.html">LIFECARE HOSPITAL</a></h1>
+                </div>    
+            </div>
+            <!--Top right for phone contact-->
+            <div class="top-right">
+                <img src="Images/phone-solid.svg" alt="Phone Icon" class="phone-icon">
+                <div class="phone">+94 112 349 204</div>
+            </div>
+            <!--Top left for phone contact-->
+            <div class="top-left">
+                <img src="Images/envelope-solid.svg" alt="Email Icon" class="email-icon">
+                <div class="email">lifecarehospital@gmail.com</div>
+            </div>
+            
+        </div>
+        
+        <!-- Hamburger Icon (visible in mobile view) -->
+        <div class="hamburger-menu">
+            <p class="menu-link" onclick="toggleMenu()">☰</p>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("nav-menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+        
+        
+    </header>
+    <!--Main section containing nav buttons-->
+    <main class="head">
+        <div class="nav-buttons" id="nav-menu">
+            <button onclick="location.href='index.html'">HOME</button>
+            <button onclick="location.href='about us.html'">ABOUT US</button>
+            <button onclick="location.href='services.html'">SERVICES</button>
+            <button onclick="location.href='doctor.html'">DOCTOR CHANNELING</button>
+            <button onclick="location.href='pharmacy.html'">PHARMACY</button>
+            <button onclick="location.href='contact.html'">CONTACT US</button>
+        </div>
+    </main>
+    <!--Form section for consultation-->
+    <main class="form">
+        <!--Header section for the form title-->
+        <header class="form-head">
+            <h1>Form of Consultation</h1>
+        </header>
+
+        <!--Form layout-->
+        <form action="#">
+            
+            <!--Label and input for name-->
+            <label for="full-name">Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <!--Label and input for email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!--Label and input for contact number-->
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number" required>
+
+            <!--Label and input for date-->
+            <label for="dob">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <!--Label and selection for gender-->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <!--Label and input for Department-->
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+            
+            <!--Label and selection for doctor name-->
+            <label for="doctor-name">Doctor name:</label>
+            <select id="doctor" name="doctor">
+                <option value="doctor-name">Dr. Sarah Smith</option>
+                <option value="doctor-name">Dr. Ravi Patel</option>
+                <option value="doctor-name">Dr. Jennifer White</option>
+                <option value="doctor-name">Dr. Mike Lee</option>
+                <option value="doctor-name">Dr. Sarah Lynn</option>
+                <option value="doctor-name">Dr. Charles Xavier</option>
+            </select required>
+            <br>
+            <!--Submit button for the form-->
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+    <!--Footer section for logo and quick links-->
+    <footer>
+        <div class="footer-container">
+            <!--Footer left section with logo-->
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="logo" class="logo-image">
+                    <div class="logo-box">LIFECARE<br>HOSPITAL</div>
+                </div>
+            </div>
+            <!--Footer right section with quick links-->
+            <div class="footer-right">
+                <h4>Quick Links</h4>
+                <div class="underline"></div>
+                <ul class="footer-links">
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="doctor.html">Doctor Channeling</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+        
+
+    
+</body>
+</html>
+                
+                    
+    

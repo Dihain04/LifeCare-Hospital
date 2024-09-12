@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+    
+    <!--Linking of external files for styling and icons-->
+    <link rel="stylesheet" href="styles/patient registration.css">
+    <link rel="icon" type="image/LIFECare HOSPITAL.png" href="Images/LIFECare HOSPITAL.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzOd9kz1D6k2K7pT4omRhqT2g64om5Ef3gGdE1X5uQoU5SNWadf5/A6kAf6v0BZcqjV0G4WhQuFvFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <!--Header section for logo and contact details-->
+    <header>
+        <div class="header">
+            <!--Logo and hospital name-->
+            <div class="logo-item">
+                <div class="logo-wrapper">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="Hospital Logo" class="logo">
+                    <h1><a href="index.html">LIFECARE HOSPITAL</a></h1>
+                </div>    
+            </div>
+            <!--Top right for phone contact-->
+            <div class="top-right">
+                <img src="Images/phone-solid.svg" alt="Phone Icon" class="phone-icon">
+                <div class="phone">+94 112 349 204</div>
+            </div>
+            <!--Top left for email address-->
+            <div class="top-left">
+                <img src="Images/envelope-solid.svg" alt="Email Icon" class="email-icon">
+                <div class="email">lifecarehospital@gmail.com</div>
+            </div>
+            
+        </div>
+        <!-- Hamburger Icon (visible in mobile view) -->
+        <div class="hamburger-menu">
+            <p class="menu-link" onclick="toggleMenu()">☰</p>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("nav-menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+        
+        
+    </header>
+    <div class="nav-buttons" id="nav-menu">
+        <button onclick="location.href='index.html'">HOME</button>
+        <button onclick="location.href='about us.html'">ABOUT US</button>
+        <button onclick="location.href='services.html'">SERVICES</button>
+        <button onclick="location.href='doctor.html'">DOCTOR CHANNELING</button>
+        <button onclick="location.href='pharmacy.html'">PHARMACY</button>
+        <button onclick="location.href='contact.html'">CONTACT US</button>
+    </div>
+    <main class="form">
+        <header>
+            <h1 class="h1">Patient Registration</h1>
+        </header>
+
+        <form action="#">
+
+            <section id="Personal Information">
+                <h2>Personal Information</h2>
+                <label for="full-name">Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label for="contact-number">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact-number" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </section>
+
+            <section id="Insurance Details">
+                <h2>Insurance Details</h2>
+                <label for="insurance-provider">Insurance Provider</label>
+                <input type="text" id="insurance-provider" name="insurance-provider" required>
+
+                <label for="policy-number">Policy Number:</label>
+                <input type="text" id="policy-number" name="policy-number" required>
+
+                <label for="group-number">Group Number:</label>
+                <input type="text" id="group-number" name="group-number" required>
+
+                <label for="primary-insurance-holder">Primary Insurance Holder:</label>
+                <input type="text" id="primary-insurance-holder" name="primary-insurance-holder" required>
+            </section>
+            <section id="Emergency Contact">
+                <h2>Emergency Contact</h2>
+                <label for="emergency-contact-name">Name:</label>
+                <input type="text" id="emergency-contact-name" name="emergency-contact-name" required>
+    
+                <label for="relationship">Relationship:</label>
+                <select id="insurance-provider" name="insurance-provider">
+                    <option value="spouse">Spouse</option>
+                    <option value="parent">Parent</option>
+                    <option value="friend">Friend</option>
+                    <option value="legal-guardian">Legal Guardian</option>
+                </select>
+    
+                <label for="emergency-contact-number">Contact Number:</label>
+                <input type="text" id="emergency-contact-number" name="emergency-contact-number" required>
+        
+            </section>
+            <section>
+                <h2>Medical Information</h2>
+                <label for="primary-physician">Primary Physician:</label>
+                <input type="text" id="primary-physician" name="primary-physician">
+
+                <label for="reason-for-visit">Reason for Visit:</label>
+                <textarea id="reason-for-visit" name="reason-for-visit" rows="4"></textarea>
+
+                <label for="current-medications">Current Medications:</label>
+                <textarea id="current-medications" name="current-medications" rows="4"></textarea>
+
+                <label for="allergies">Allergies:</label>
+                <textarea id="allergies" name="allergies" rows="4"></textarea>
+
+                <label for="previous-medical-conditions">Previous Medical Conditions:</label>
+                <textarea id="previous-medical-conditions" name="previous-medical-conditions" rows="4"></textarea>
+            </section>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="logo" class="logo-image">
+                    <div class="logo-box">LIFECARE<br>HOSPITAL</div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h4>Quick Links</h4>
+                <div class="underline"></div>
+                <ul class="footer-links">
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="doctor.html">Doctor Channeling</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    
+    
+</body>
+</html>

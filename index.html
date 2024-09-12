@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+
+    <!--Linking of external files for styling and icons-->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="css/all.css">
+    <link rel="icon" type="image/LIFECare HOSPITAL.png" href="Images/LIFECare HOSPITAL.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzOd9kz1D6k2K7pT4omRhqT2g64om5Ef3gGdE1X5uQoU5SNWadf5/A6kAf6v0BZcqjV0G4WhQuFvFg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Header section for logo and contact details-->
+    <header>
+        <div class="header">
+            <!--Logo and hospital name-->
+            <div class="logo-item">
+                <div class="logo-wrapper">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="Hospital Logo" class="logo">
+                    <h1><a href="index.html">LIFECARE HOSPITAL</a></h1>
+                </div>    
+            </div>
+            <!--Top right for phone contact-->
+            <div class="top-right">
+                <img src="Images/phone-solid.svg" alt="Phone Icon" class="phone-icon">
+                <div class="phone">+94 112 349 204</div>
+            </div>
+            <!--Top left for email address-->
+            <div class="top-left">
+                <img src="Images/envelope-solid.svg" alt="Email Icon" class="email-icon">
+                <div class="email">lifecarehospital@gmail.com</div>
+            </div>
+            
+        </div>
+
+        <!-- Hamburger Icon (visible in mobile view) -->
+        <div class="hamburger-menu">
+            <p class="menu-link" onclick="toggleMenu()">☰</p>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("nav-menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+
+        
+        
+    </header>
+    <!--Main section containing nav buttons-->
+    <main>
+        <div class="nav-buttons" id="nav-menu">
+            <button onclick="location.href='index.html'">HOME</button>
+            <button onclick="location.href='about us.html'">ABOUT US</button>
+            <button onclick="location.href='services.html'">SERVICES</button>
+            <button onclick="location.href='doctor.html'">DOCTOR CHANNELING</button>
+            <button onclick="location.href='pharmacy.html'">PHARMACY</button>
+            <button onclick="location.href='contact.html'">CONTACT US</button>
+        </div>
+    </main>
+        <!--Hero section with an image as the main image-->
+        <section class="hero">
+            <img src="Images/Hero.png" width="100%" height="auto" >
+        </section>
+        
+        <!-- Section for main text content with a welcome message and latest news -->
+        <text class="text">
+            <br>
+            <br>
+            <!-- Welcome message -->
+            <h2>Welcome to LifeCare Hospital</h2>
+            <br>
+            <!-- Introduction paragraph about the hospital's mission and care -->
+            <p>At LifeCare Hospital, we are dedicated to providing exceptional care and support to our patients and their families.</p>
+            <p>Our team of experienced professionals is committed to your well-being and comfort, ensuring that you receive the highest quality of medical attention.</p>
+            <P>Thank you for choosing LifeCare Hospital. We are here to support you every step of the way.</P>
+            <br>
+            <br>
+            <!-- Latest news section -->
+            <h2>Latest News</h2>
+            <!-- Introduction to the news section -->
+            <p>Check out the latest news from LifeCare Hospital</p>
+        </text>
+
+        <!-- Section for news cards -->
+        <div class="news">
+            <!-- Card 1 -->
+            <div class="card">
+                <!-- Image for the news article -->
+                <img src="Images/Sustainability in healthcare.webp" alt="Sustainability in Healthcare">
+                <!--News article content-->
+                <div class="card-content">
+                    <h3>Sustainability in Healthcare</h3>
+                    <p>Sustainability in healthcare involves creating systems that provide high-quality care while minimizing environmental impact and ensuring long-term viability. This includes reducing resource consumption, managing waste responsibly, and adopting energy-efficient technologies. Sustainable healthcare also promotes preventive care and wellness, aiming to reduce the overall burden on healthcare systems by focusing on early intervention and education. Additionally, it emphasizes equity, ensuring that all individuals have access to necessary care without compromising the ability of future generations to meet their healthcare needs.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <!-- Image for the news article -->
+                <img src="Images/Mental awareness.webp" alt="Mental Health Awareness">
+                <div class="card-content">
+                    <!-- News article content -->
+                    <h3>Top 5 Tips for Mental Health Awareness</h3>
+                    <p>
+                        <ol>
+                            <li>Incorporate mindfulness meditation into your routine to stay present and reduce stress.</li><br>
+                            <li>Adopt a balanced diet, regular exercise, and adequate sleep to support cognitive function.</li><br>
+                            <li>Engage in activities like puzzles and learning new skills to keep your brain sharp.</li><br>
+                            <li>Use stress management techniques such as deep breathing and relaxation exercises to handle stress.</li><br>
+                            <li>Strengthen relationships with family and friends to improve emotional well-being and support.</li>
+                            
+                        </ol>
+                    </p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <!-- Image for the news article -->
+                <img src="https://ysm-res.cloudinary.com/image/upload/ar_1:1,c_fill,dpr_3.0,f_auto,g_faces:auto,q_auto:eco,w_500/v1/yms/prod/e1bc4546-5327-45df-8b8a-cd824aeefcfd" alt="COVID-19 Long-Term Impact Studies">
+                <div class="card-content">
+                    <!-- News article content -->
+                    <h3>COVID-19 Long-Term Impact Studies</h3>
+                    <p>Lifecare Hospital is actively researching the long-term effects of COVID-19, with a focus on symptoms like fatigue, respiratory issues, cardiovascular complications, and cognitive problems. Known as "Long COVID," these persistent symptoms affect many patients even months after recovery. Our team of specialists, including cardiologists, pulmonologists, and neurologists, is working to understand the virus’s long-term impact on the body. Through ongoing research, Lifecare Hospital aims to develop effective treatment plans and provide personalized care to help patients regain their quality of life.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section for international patient care -->
+        <section class="international-patient-care">
+            <!-- Image for the international patient care -->
+            <div class="patientcare-image">
+                <img src="Images/International patients.jpeg" alt="International Patient Care">
+            </div>
+            <!-- Content for the international patient care -->
+            <div class="content-container">
+                <h2>International Patient Care</h2>
+                <p>LifeCare Hospital has a dedicated team to handle the care of international patients within the hospital. 
+                    This includes coordinating not only the patient’s stay at the hospital and insurance coverage but also 
+                    airport drop off and pickups as well as hotel accommodation. Durdans, being a JCI-accredited hospital, 
+                    meets international standards in healthcare. With state-of-the-art facilities and a highly skilled team, 
+                    patients are guaranteed a smooth recovery process.</p>
+            </div>
+        </section>
+        <!--Footer section for logo and quick links-->
+        <footer>
+            <div class="footer-container">
+                <!--Footer left section with logo-->
+                <div class="footer-left">
+                    <div class="logo-footer">
+                        <img src="Images/LIFECare HOSPITAL.png" alt="logo" class="logo-image">
+                        <div class="logo-box">LIFECARE<br>HOSPITAL</div>
+                    </div>
+                </div>
+                <!--Footer right section with quick links-->
+                <div class="footer-right">
+                    <h4>Quick Links</h4>
+                    <div class="underline"></div>
+                    <ul class="footer-links">
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="doctor.html">Doctor Channeling</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+            
+
+</body>
+</html>

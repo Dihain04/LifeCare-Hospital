@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+
+    <!--Linking of external files for styling and icons-->
+    <link rel="stylesheet" href="styles/about us.css">
+    <link rel="icon" type="image/LIFECare HOSPITAL.png" href="Images/LIFECare HOSPITAL.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzOd9kz1D6k2K7pT4omRhqT2g64om5Ef3gGdE1X5uQoU5SNWadf5/A6kAf6v0BZcqjV0G4WhQuFvFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <!--Header section for logo and contact details-->
+    <header>
+        <div class="header">
+            <!--Logo and hospital name-->
+            <div class="logo-item">
+                <div class="logo-wrapper">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="Hospital Logo" class="logo">
+                    <h1><a href="index.html">LIFECARE HOSPITAL</a></h1>
+                </div>    
+            </div>
+            <!--Top right for phone contact-->
+            <div class="top-right">
+                <img src="Images/phone-solid.svg" alt="Phone Icon" class="phone-icon">
+                <div class="phone">+94 112 349 204</div>
+            </div>
+            <!--Top left for email address-->
+            <div class="top-left">
+                <img src="Images/envelope-solid.svg" alt="Email Icon" class="email-icon">
+                <div class="email">lifecarehospital@gmail.com</div>
+            </div>
+            
+        </div>
+
+        <!-- Hamburger Icon (visible in mobile view) -->
+        <div class="hamburger-menu">
+            <p class="menu-link" onclick="toggleMenu()">☰</p>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("nav-menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+        
+    </header>
+    <!--Main section containing nav buttons-->
+    <main>
+        <div class="nav-buttons" id="nav-menu">
+            <button onclick="location.href='index.html'">HOME</button>
+            <button onclick="location.href='about us.html'">ABOUT US</button>
+            <button onclick="location.href='services.html'">SERVICES</button>
+            <button onclick="location.href='doctor.html'">DOCTOR CHANNELING</button>
+            <button onclick="location.href='pharmacy.html'">PHARMACY</button>
+            <button onclick="location.href='contact.html'">CONTACT US</button>
+        </div>
+    </main>
+        <!--Hero section with an image as the main image-->    
+        <section class="hero">
+            <img src="Images/Hero.png" alt="main-image" width="100%" height=auto>
+            
+        </section>
+
+        <!--About us description-->
+        <text class="text">
+            <br>
+            <br>
+            <h2>ABOUT LIFECARE HOSPITAL</h2>
+            <br>
+            <!--Description generated through ChatGPT-->
+            <p>Lifecare Hospital is dedicated to providing exceptional healthcare services with a patient-centric approach. Our state-of-the-art facility is equipped with advanced medical technology and a team of highly skilled professionals committed to delivering compassionate care. From preventive medicine to specialized treatments, we strive to meet the diverse health needs of our community. At Lifecare Hospital, your well-being is our top priority, and we are here to support you every step of the way on your health journey.</p>
+        </text>
+
+        <!--Table about the different hospital branches-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Branch Name</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Narahenpita Branch-->
+                <tr>
+                    <td class="branch">Narahenpita Branch</td>
+                    <!--Embeded google maps for the location-->
+                    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.532389378594!2d79.85906160131961!3d6.918531271182776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25974bb2bbc83%3A0xeeb6e8e47655f428!2sNational%20Hospital%20of%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1725608631370!5m2!1sen!2slk" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    <!--Image link-->
+                    <td><img src="https://arcmaxarchitect.com/sites/default/files/2024-01/1000%20beds%20Hospital%20design%20Plans.jpg" alt="Narahenpita-Branch">
+                        <!--Description generated through ChatGPT-->
+                        <p>Lifecare Hospital’s Narahenpita branch is a state-of-the-art facility offering comprehensive healthcare services. From specialized consultations to advanced diagnostics, this branch caters to a wide range of medical needs. Open from 7:00 AM to 10:00 PM, it ensures that patients receive timely care in a compassionate and professional environment.</p>
+                    </td>
+                </tr>
+
+                <!--Wellawatta Branch-->
+                <tr>
+                    <td>Wellawatta Branch</td>
+                    <!--Embeded google maps for the location-->
+                    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27406.047907950495!2d79.84917645756119!3d6.888531615614968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bba40c29967%3A0x99f3e664ea87ae7d!2sNew%20Delmon%20Hospital!5e0!3m2!1sen!2slk!4v1725608725972!5m2!1sen!2slk" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    <!--Image link-->
+                    <td><img src="https://t3.ftcdn.net/jpg/02/11/15/66/360_F_211156620_CeBr5etdTNXLb231sFcQ8M9YD1OY5IW8.jpg" alt="Wellawatta-Branch">
+                        <!--Description generated through ChatGPT-->
+                        <p>Located in the heart of Wellawatte, this branch of Lifecare Hospital is dedicated to providing high-quality medical services with a focus on personalized care. With a team of expert medical professionals, it offers everything from outpatient services to specialized treatments. The hospital is open from 8:00 AM to 9:00 PM.</p>
+                    </td>
+                </tr>
+
+                <!--Dehiwala Branch-->
+                <tr>
+                    <td>Dehiwala Branch</td>
+                    <!--Embeded google maps for the location-->
+                    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60059.12186786047!2d79.82291343816532!3d6.907978097277136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25afdb770f367%3A0x14b7c7cf11a5df0f!2sVasana%20Hospital!5e0!3m2!1sen!2slk!4v1725608887003!5m2!1sen!2slk" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    <!--Image link-->
+                    <td><img src="https://thumbs.dreamstime.com/b/hospital-building-modern-parking-lot-59693686.jpg" alt="Dehiwala-Branch">
+                        <!--Description generated through ChatGPT-->
+                        <p>The Dehiwala branch of Lifecare Hospital is known for its friendly atmosphere and excellent medical care. Offering a variety of healthcare services, from routine check-ups to specialized care, it is a trusted choice for the community. The hospital operates from 8:00 AM to 8:00 PM, ensuring accessible healthcare for all.</p>
+                    </td>
+                </tr>
+            </tbody>
+            <!--Table Footer row-->
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="table-foot">Information regarding the Hospital Branches.</td>
+                </tr>
+            </tfoot>
+        </table>
+    <!--Footer section for logo and quick links-->
+    <footer>
+        <div class="footer-container">
+            <!--Footer left section with logo-->
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="logo" class="logo-image">
+                    <div class="logo-box">LIFECARE<br>HOSPITAL</div>
+                </div>
+            </div>
+            <!--Footer right section with quick links-->
+            <div class="footer-right">
+                <h4>Quick Links</h4>
+                <div class="underline"></div>
+                <ul class="footer-links">
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="doctor.html">Doctor Channeling</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

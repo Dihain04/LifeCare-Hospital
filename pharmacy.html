@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+    <link rel="stylesheet" href="styles/pharmacy.css">
+    <link rel="icon" type="image/LIFECare HOSPITAL.png" href="Images/LIFECare HOSPITAL.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzOd9kz1D6k2K7pT4omRhqT2g64om5Ef3gGdE1X5uQoU5SNWadf5/A6kAf6v0BZcqjV0G4WhQuFvFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-item">
+                <div class="logo-wrapper">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="Hospital Logo" class="logo">
+                    <h1><a href="index.html">LIFECARE HOSPITAL</a></h1>
+                </div>    
+            </div>
+            <div class="top-right">
+                <img src="Images/phone-solid.svg" alt="Phone Icon" class="phone-icon">
+                <div class="phone">+94 112 349 204</div>
+            </div>
+            <div class="top-left">
+                <img src="Images/envelope-solid.svg" alt="Email Icon" class="email-icon">
+                <div class="email">lifecarehospital@gmail.com</div>
+            </div>
+            
+        </div>
+        <!-- Hamburger Icon (visible in mobile view) -->
+        <div class="hamburger-menu">
+            <p class="menu-link" onclick="toggleMenu()">☰</p>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("nav-menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+        
+        
+    </header>
+    <div class="nav-buttons" id="nav-menu">
+        <button onclick="location.href='index.html'">HOME</button>
+        <button onclick="location.href='about us.html'">ABOUT US</button>
+        <button onclick="location.href='services.html'">SERVICES</button>
+        <button onclick="location.href='doctor.html'">DOCTOR CHANNELING</button>
+        <button onclick="location.href='pharmacy.html'">PHARMACY</button>
+        <button onclick="location.href='contact.html'">CONTACT US</button>
+    </div>
+    <section class="pharmacy-image">
+        <img src="Images/pharmacy (2).webp" alt="pharmacy-image" width="100%" height="700">
+    </section>
+    <text class="text">
+        <br>
+        <br>
+        <h2>Pharmacy</h2>
+        <br>
+        <p>The Lifecare Hospital Pharmacy offers convenient and reliable access to a full range of medications. Our skilled pharmacists work closely with your healthcare team to ensure you receive the right prescriptions and expert advice on their use. We provide both prescription and over-the-counter medications, along with personalized counseling to help you manage your treatment. At Lifecare Hospital Pharmacy, we’re dedicated to supporting your health with prompt and trusted care.</p>
+                
+
+    </text>
+    <main>
+        <header>
+            <h1 class="pharmacy">Pharmacy Form</h1>
+        </header>
+
+    <form action="#">
+        <section id="Patient Information">
+            <h2>Patient Information</h2>
+            <label for="full-name">Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="patient-id">Patient ID:</label>
+            <input type="text" id="patient-id" name="patient-id" required>
+
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number" required>
+        </section>
+
+        <section id="Prescription Details">
+            <h2>Prescription Details</h2>
+            <label for="prescription-id">Prescription ID:</label>
+            <input type="text" id="prescription-id" name="prescription-id" required>
+
+            <label for="medication-name">Medication Name:</label>
+            <input type="text" id="medication-name" name="medication-name" required>
+
+            <label for="dosage">Dosage:</label>
+            <input type="text" id="dosage" name="dosage" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" required>
+        </section>
+        <section id="Payment Method">
+            <h2>Payment Method</h2>
+            <label for="card-name">Name:</label>
+            <input type="text" id="card-name" name="card-name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiration-date">Expiration Date:</label>
+            <input type="date" id="expiration-date" name="expiration-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+    
+        </section>
+        <button type="submit" class="btn">Submit Order</button>
+        
+
+    </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="logo" class="logo-image">
+                    <div class="logo-box">LIFECARE<br>HOSPITAL</div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h4>Quick Links</h4>
+                <div class="underline"></div>
+                <ul class="footer-links">
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="doctor.html">Doctor Channeling</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

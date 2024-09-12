@@ -1,0 +1,383 @@
+/*General body styles*/
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font family for the entire page */
+    margin: 0; /* Removes default margin around the body */
+    padding: 0; /* Removes default padding around the body */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    background-color: #beeaee; /* Sets the background color of the page */
+    overflow-x: hidden; /* Hides horizontal overflow */
+}
+
+/*Header styling*/
+.header{
+    display: flex; /* Uses flexbox layout for the header */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */
+    padding: 10px 10px;  /* Increase padding for more space */
+    height: 100px; /* Sets the height of the header */
+    text-align: center; /* Centers text */
+    background-color: #007bff; /* Sets the background color of the header */
+}
+
+/* Logo container in the header */
+.logo-item {
+    display: flex; /* Uses flexbox layout for the logo */
+    align-items: center; /* Vertically centers items */   
+    justify-content: center; /* Horizontally centers items */
+    flex-grow: 1; /* Makes the logo take up the remaining space */
+}
+
+/* Logo wrapper with border and padding */
+.logo-wrapper{
+    display: flex; /* Uses flexbox layout for the logo wrapper */
+    align-items: center; /* Vertically centers items */
+    border: 5px solid black; /* Adds a border around the logo */ 
+    padding-right: 7px; /* Adds padding to the right of the logo */
+    padding-left: 7px; /* Adds padding to the left of the logo */
+    background-color: #013c7b; /* Sets the background color of the logo wrapper */
+}
+
+/* Logo image styling */
+.logo{
+    margin-right: 10px; /* Adds space between the logo and text */ 
+    max-height: 30px; /* Sets the maximum height of the logo */
+}
+
+/* Header logo text styling */
+.logo-item h1 a{
+    text-decoration: none; /* Removes the underline from the text */
+    font-size: 30px; /* Sets the font size of the text */
+    display: flex; /* Uses flexbox layout for the text */
+    align-items: center; /* Vertically centers items */
+    color: white;  /* Sets the color of the text */
+}
+
+/* For the top right and left icons */
+.top-right{
+    position: absolute; /* Positions the element absolutely within its containing element */
+    top: 0; /* Positions the element at the top of its containing element */
+    right: 0; /* Positions the element at the right of its containing element */
+    padding: 10px; /* Increase padding for more space */
+    margin-top: 20px; /* Space between icon and text */
+    border: 2px solid black; /* Adds a border around the icon */
+    color: white; /* Sets the color of the text */
+    background-color: #3574b7; /* Sets the background color of the icon */
+}
+
+.top-left{
+    position: absolute; /* Positions the element absolutely within its containing element */
+    top: 0; /* Positions the element at the top of its containing element */
+    left: 0; /* Positions the element at the left of its containing element */
+    padding: 10px; /* Increase padding for more space */
+    margin-top: 20px; /* Space between icon and text */
+    border: 2px solid black; /* Adds a border around the icon */
+    color: white; /* Sets the color of the text */
+    background-color: #3574b7; /* Sets the background color of the icon */
+}
+
+/* For the phone and email icons */
+.phone-icon, .email-icon {
+    width: 20px; /* Reduce the size of the icons */
+    height: auto; /* Adjust the height proportionally to the width */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Navigation buttons styling */
+.nav-buttons{
+    display: flex; /* Uses flexbox layout for the navigation buttons */
+    gap: 2px; /* Adds spacing between the buttons */
+    display: flex; /* Uses flexbox layout for the navigation buttons */
+    justify-content: flex-end; /* Aligns buttons to the right */
+    background-color: #007bff; /* Sets the background color of the navigation buttons */
+}
+
+.nav-buttons button{
+    background-color: rgb(50, 216, 191) ; /* Sets the background color of the navigation buttons */
+    color: white; /* Sets the color of the text */
+    border: none; /* Removes the border */
+    padding: 10px; /* Increase padding for more space */
+    cursor: pointer; /* Changes cursor to pointer */
+    font-size: 15px; /* Increase font size */
+}
+
+.nav-buttons button:hover{
+    background-color: rgb(5, 90, 90) ; /* Sets the background color of the navigation buttons */
+}
+
+script, .hamburger-menu{
+    display: none;
+}
+
+/*Text styling*/
+.text h2{
+    padding: 10px; /* Increase padding for more space */
+    font-size: 30px; /* Increase font size */
+}
+
+
+.text p{
+    text-align: justify; /* Aligns text to the left */
+    padding: 10px; /* Increase padding for more space */
+    line-height: 1.5; /* Increase line spacing */
+}
+
+/*Box styling*/
+.container{
+    display: flex; /* Uses flexbox layout for the container */
+    justify-content: center; /* Horizontally centers the boxes */
+    align-items: center; /* Vertically centers the boxes */
+    gap: 200px; /* Adds spacing between the boxes */
+    margin-top: 100px; /* Increase margin for more space */
+    margin-bottom: 100px; /* Increase margin for more space */
+}
+
+.box{
+    width: 300px; /* Sets the width of the boxes */
+    height: 350px; /* Sets the height of the boxes */
+    border: 1px solid black; /* Adds a border around the boxes */
+    display: flex; /* Uses flexbox layout for the boxes */
+    justify-content: center; /* Horizontally centers the boxes */
+    flex-direction: column; /* Sets the direction of the boxes */
+    align-items: right; /* Sets the alignment of the boxes */
+    text-align: left; /* Aligns text to the left */
+    padding-top: 10px; /* Increase padding for more space */
+    background-color: aliceblue; /* Sets the background color of the boxes */
+    
+}
+
+/*Title styling of each box*/
+.flex-title{
+    text-align: center; /* Aligns text to the center */
+    margin-top: 5px; /* Increase margin for more space */
+}
+
+/*Content styling of each box*/
+.flex-content{
+    display: flex; /* Uses flexbox layout for the content */
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+/* Styles for the text link */
+.link-container{
+    text-align: center; /* Aligns text to the center */
+}
+
+.link{
+    text-decoration: none; /* Removes the underline from the text */
+    color: rgb(18, 34, 176); /* Sets the color of the text */
+    text-align: center; /* Aligns text to the center */
+}
+
+.link:hover{
+    text-decoration: underline; /* Adds an underline to the text when hovered over */
+}
+
+/* Footer styling */
+footer{
+    width: 100%; /* Sets the width of the footer */
+    border-top: 1px solid #000; /* Adds a border to the top of the footer */
+    padding:20px; /* Adds padding to the footer */
+    background-color: #f8f8f8; /* Sets the background color of the footer */
+    font-family: Arial, sans-serif; /* Sets the font family of the footer */
+    color: #333; /* Sets the color of the footer text */
+    background-color: #0f80f9; /* Sets the background color of the footer */
+    margin-top: 55px; /* Increase margin for more space */
+}
+
+/* Footer logo container */
+.logo-footer{
+    display: flex; /* Uses flexbox layout for the logo and text */
+    align-items: center; /* Aligns the logo and text vertically */
+    justify-content: center; /* Aligns the logo and text horizontally */
+    flex-grow: 1; /* Makes the logo and text take up the full width of the footer */
+}
+
+.logo-image{
+    margin-right: 10px; /* Adds space between the logo and text */
+    max-height: 35px; /* Sets the maximum height of the logo */
+}
+
+/* Footer container with alignment and padding */
+.footer-container{
+    background-color: #0f80f9; /* Sets the background color of the footer */
+    display: flex; /* Uses flexbox layout for the footer container */
+    justify-content: space-between; /* Aligns the footer content to the left and right */
+    align-items: center; /* Aligns the footer content vertically */
+    max-width: 1200px; /* Sets the maximum width of the footer container */
+    padding-left: 250px; /* Adds padding to the footer container */
+    padding-right: 250px; /* Adds padding to the footer container */
+}
+
+/* Footer left section styling */
+.footer-left{
+    font-size: 20px; /* Sets the font size of the footer left section */
+    font-weight: bold; /* Sets the font weight of the footer left section */
+    color: white; /* Sets the color of the footer left section */
+    letter-spacing: 2px; /* Adds spacing between the letters in the footer left section */
+    border: 3px solid black; /* Adds a border to the footer left section */
+    padding: 8px; /* Adds padding to the footer left section */
+    background-color: #013c7b; /* Sets the background color of the footer left section */
+}
+
+/* Footer box styling for text alignment */
+.logo-box{
+    text-align: center; /* Aligns the logo box to the center */
+    white-space: normal; /* Allows text to wrap */
+}
+
+/* Footer right section styling */
+.footer-right h4{
+    font-size: 18px; /* Sets the font size of the footer right section */
+    color: white; /* Sets the color of the footer right section */
+    margin-bottom: 10px; /* Adds space below the footer right section */
+
+}
+
+.footer-right ul li{
+    margin-bottom: 5px; /* Adds space below the footer right section */
+}
+
+
+.footer-right ul li a{
+    text-decoration: none; /* Removes the underline from the footer right section */
+    color: white; /* Sets the color of the footer right section */
+    font-size: 16px; /* Sets the font size of the footer right section */
+}
+
+.footer-right ul li a:hover{
+    color: rgb(210, 207, 207); /* Sets the hover color of the footer right section */
+}
+
+.footer:hover{
+    background-color: #f0f0f0; /* Sets the background color on hover */
+}
+
+/* Media queries for mobile responsive design */
+@media (max-width: 768px) {
+
+    /* Adjust body layout for mobile */
+    html{
+        overflow-x: hidden; /* Hide horizontal scrolling */
+    
+    }
+
+    /* Adjust Header styling */
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        height: auto; /* Set header height to auto */
+        text-align: center; /* Center header text */
+    }
+
+    .logo-item h1 {
+        font-size: 24px; /* Adjust header font size */
+    }
+
+    .top-right, .top-left {
+        position: static; /* Reset top-right and top-left positions */
+        margin: 5px 0; /* Add margin to top-right and top-left */
+        border: none; /* Remove border from top-right and top-left */
+        background-color: transparent; /* Remove background color from top-right and top-left */
+        display: none; /* Hide top-right and top-left on mobile */
+    }
+
+    .hamburger-menu, .menu-link {
+        display: flex; /* Show hamburger icon in mobile */
+        align-items: center; /* Center the hamburger icon vertically */
+        font-size: 24px; /* Set the font size of the hamburger icon */
+        margin-left: auto; /* Push to the right */
+        cursor: pointer; /* Change cursor to pointer */   
+        padding-right: 15px; /* Add padding to the right */
+        background-color: #007bff; /* Set the background color */
+    }
+
+    .nav-buttons {
+        display: none; /* Keep the nav menu hidden by default */
+        flex-direction: column; /* Stack the navigation buttons vertically */
+        align-items: center;  /* Center the navigation buttons horizontally */
+        width: 100%; /* Set the width to 100% */
+    }
+    .nav-buttons.active {
+        display: flex; /* Show the nav menu when active */
+    }
+
+    /* Style for navigation buttons */
+    .nav-buttons button {
+        width: 100%; /* Full width for each button */
+        margin-bottom: 5px; /* Add margin to the bottom of each button */
+        font-size: 14px; /* Set the font size for each button */
+    }
+
+    /* adjust Main Image */
+    .main-image img {
+        height: auto; /* Adjust image height to auto */
+        margin-top: 30px; /* Add spacing above image */
+    }
+
+    /* Adjust Text Section */
+    .text {
+        padding: 10px; /* Add padding to the text section */
+        font-size: 14px; /* Adjust font size for the text section */
+    }
+
+    /* Adjust Container Boxes */
+    .container {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 20px; /* Add spacing between boxes */
+        margin-top: 50px; /* Add spacing above boxes */
+    }
+
+    .box {
+        width: 50%; /* Adjust box width */
+        height: auto; /* Adjust box height to auto */
+        padding: 20px; /* Add padding to the box */
+    }
+
+    /* Footer Layout */
+    footer {
+        padding: 10px; /* Add padding to footer */
+    }
+
+    .footer-container {
+        flex-direction: column;  /* Stack items vertically on mobile */
+        justify-content: flex-start;  /* Align items at the start of the column */
+        align-items: flex-start;  /* Align items to the left */
+        padding-left: 10px;  /* Add padding to the left */
+    }
+
+    .footer-left{
+        display: flex;  /* Add display flex */
+        flex-direction: column;  /* Stack items vertically */
+        align-items: flex-start;  /* Align items to the left */
+        
+    }
+
+    .footer-right {
+        text-align: left;  /* Ensure text aligns to the left */
+        width: 100%;  /* Full width for both sections */
+    }
+    .footer-right ul {
+        padding-left: 0;  /* Remove any default list padding */
+    }
+
+    .footer-links{
+        margin-left: 18px;  /* Add margin to the left */
+    }
+
+    .logo-footer {
+        display: flex;  /* Add display flex */
+        align-items: center;  /* Keep logo text and image aligned */
+    }
+
+    .logo-image {
+        max-width: 80px;  /* Adjust logo size */
+    }
+
+    .logo-box {
+        margin-left: 10px;  /* Space between logo and text */
+    }
+}
+
+
+
+
+

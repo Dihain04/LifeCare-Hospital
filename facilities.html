@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+
+    <!--Linking of external files for styling and icons-->
+    <link rel="stylesheet" href="styles/facilities.css">
+    <link rel="icon" type="image/LIFECare HOSPITAL.png" href="Images/LIFECare HOSPITAL.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzOd9kz1D6k2K7pT4omRhqT2g64om5Ef3gGdE1X5uQoU5SNWadf5/A6kAf6v0BZcqjV0G4WhQuFvFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <!--Header section for logo and contact details-->
+    <header>
+        <div class="header">
+            <!--Logo and hospital name-->
+            <div class="logo-item">
+                <div class="logo-wrapper">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="Hospital Logo" class="logo">
+                    <h1><a href="index.html">LIFECARE HOSPITAL</a></h1>
+                </div>    
+            </div>
+            <!--Top right for phone contact-->
+            <div class="top-right">
+                <img src="Images/phone-solid.svg" alt="Phone Icon" class="phone-icon">
+                <div class="phone">+94 112 349 204</div>
+            </div>
+            <!--Top left for email address-->
+            <div class="top-left">
+                <img src="Images/envelope-solid.svg" alt="Email Icon" class="email-icon">
+                <div class="email">lifecarehospital@gmail.com</div>
+            </div>
+            
+        </div>
+        <!-- Hamburger Icon (visible in mobile view) -->
+        <div class="hamburger-menu">
+            <p class="menu-link" onclick="toggleMenu()">☰</p>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("nav-menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+        
+        
+    </header>
+    <!--Nav buttons-->
+    <div class="nav-buttons" id="nav-menu">
+        <button onclick="location.href='index.html'">HOME</button>
+        <button onclick="location.href='about us.html'">ABOUT US</button>
+        <button onclick="location.href='services.html'">SERVICES</button>
+        <button onclick="location.href='doctor.html'">DOCTOR CHANNELING</button>
+        <button onclick="location.href='pharmacy.html'">PHARMACY</button>
+        <button onclick="location.href='contact.html'">CONTACT US</button>
+    </div>
+    <!--Hero image as the main image-->
+    <section class="hero">
+        <img src="Images/Hero.png" alt="main-image" width="100%" height=auto>
+    </section>
+    <!--Title of the facilities-->
+    <h2 class="facilities-title">Our Facilities</h2>
+
+    <!--Container for Facilities grid-->
+    <div class="facilities-grid">
+
+        <!--Facility 1-->
+        <div class="facility">
+            <!--Facility image (image link)-->
+            <img src="https://www.lankahospitals.com/wp-content/uploads/2021/12/Banking-ATM-facilities-419x419-1.jpg" alt="Facility picture">
+            <!--Facility title and description-->
+            <h3>BANKING FACILITIES</h3>
+            <p>Easy access to money is guaranteed thanks to a branch of the Bank of Ceylon with an ATM that is located within the hospital premises.</p>
+        </div>
+
+        <!--Facility 2-->
+        <div class="facility">
+            <!--Facility image (image link)-->
+            <img src="https://www.lankahospitals.com/wp-content/uploads/2017/02/prayer-room.jpg"alt="Facility picture">
+            <!--Facility title and description-->
+            <h3>PRAYER ROOM</h3>
+            <p>We offer a conveniently located prayer center that is open throughout the day, as we believe that healing and spirituality are intertwined.</p>
+        </div>
+
+        <!--Facility 3-->
+        <div class="facility">
+            <!--Facility image (image link)-->
+            <img src="https://www.lankahospitals.com/wp-content/uploads/2017/02/LH_FacilitiesLand_FoodBev_Thub.jpg" alt="Facility picture">
+            <!--Facility title and description-->
+            <h3>FOOD & BEVERAGE</h3>
+            <p>Along with a food safety management system, modern kitchen and the freshest ingredients our food surpasses standard hospital food, which is why we have been rated excellent in meeting international standards in food quality and hygiene</p>
+        </div>
+
+        <!--Facility 4-->
+        <div class="facility">
+            <!--Facility image (image link)-->
+            <img src="https://www.lankahospitals.com/wp-content/uploads/2021/12/Cafe-419x419-1.jpg" alt="Facility picture">
+            <!--Facility title and description-->
+            <h3>CAFE</h3>
+            <p>We offer a wide variety of delicious and healthy food options to suit every taste.</p>
+        </div>
+
+        <!--Facility 5-->
+        <div class="facility">
+            <!--Facility image (image link)-->
+            <img src="https://www.lankahospitals.com/wp-content/uploads/2017/02/LH_FacilitiesLand_RoomFacilities_Thub.jpg" alt="Facility picture">
+            <!--Facility title and description-->
+            <h3>ROOM FACILITIES</h3>
+            <p>We have modern rooms with comfortable and well-equipped facilities.</p>
+        </div>
+
+        <!--Facility 6-->
+        <div class="facility">
+            <!--Facility image (image link)-->
+            <img src="https://www.lankahospitals.com/wp-content/uploads/2021/12/Channeling-Services-419x419-1.jpg" alt="Facility picture">
+            <!--Facility title and description-->
+            <h3>CHANNELING SERVICES</h3>
+            <p>We offer highest standards of clinical skills and nursing care across wide range of specialties, with leading specialist doctors and surgeons along with spacious consultation rooms that meet international standards.</p>
+        </div>
+    </div>
+    <!--Link to patient registration-->
+    <div class="link-container">
+        <h2><a href="patient registration.html" class="link">Click for Patient Registration</a></h2>
+    </div>
+    <!--Footer section for logo and quick links-->
+    <footer>
+        <div class="footer-container">
+            <!--Footer left section with logo-->
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="Images/LIFECare HOSPITAL.png" alt="logo" class="logo-image">
+                    <div class="logo-box">LIFECARE<br>HOSPITAL</div>
+                </div>
+            </div>
+            <!--Footer right section with quick links-->
+            <div class="footer-right">
+                <h4>Quick Links</h4>
+                <div class="underline"></div>
+                <ul class="footer-links">
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="doctor.html">Doctor Channeling</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    
+</body>
+</html>
