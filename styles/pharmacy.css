@@ -1,27 +1,27 @@
-/*General body styles*/
+/* General body styles */
 body{
     font-family: Arial, Helvetica, sans-serif; /* Sets the font family for the entire page */
     margin: 0; /* Removes default margin around the body */
     padding: 0; /* Removes default padding around the body */
     box-sizing: border-box; /* Includes padding and border in element's total width and height */
-    background-color: #beeaee; /* Sets the background color of the page */
+    background-color: #beeaee; /* Sets the background color of the page */ 
     overflow-x: hidden; /* Hides horizontal overflow */
-} 
+}
 
-/*Header styling*/
+/* Header styling */
 .header{
-    display: flex; /* Uses flexbox layout for the header */
+    display: flex; /* Uses flexbox layout for the header */  
     justify-content: space-between; /* Distributes space between items */
     align-items: center; /* Vertically centers items */
     padding: 10px 10px; /* Increase padding for more space */
-    height: 100px; /* Sets the height of the header */
+    height: 100px; /* Sets the height of the header */ 
     text-align: center; /* Centers text */
     background-color: #007bff; /* Sets the background color of the header */
 }
 
 /* Logo container in the header */
 .logo-item {
-    display: flex; /* Uses flexbox layout for the logo */
+    display: flex; /* Uses flexbox layout for the logo */  
     align-items: center; /* Vertically centers items */    
     justify-content: center; /* Horizontally centers items */
     flex-grow: 1; /* Makes the logo take up the remaining space */
@@ -40,46 +40,47 @@ body{
 /* Logo image styling */
 .logo{
     margin-right: 10px; /* Adds space between the logo and text */
-    max-height: 30px; /* Sets the maximum height of the logo */
+    max-height: 30px; /* Sets the maximum height of the logo */  
+
 }
 
-/* Header logo link styling */
+/* Header logo text styling */
 .logo-item h1 a{
     text-decoration: none; /* Removes the underline from the text */
     font-size: 30px; /* Sets the font size of the text */
     display: flex; /* Uses flexbox layout for the text */
     align-items: center; /* Vertically centers items */
-    color: white; /* Sets the color of the text */
+    color: white;  /* Sets the color of the text */
+
 }
 
-/* Top-right positioned elements */
+/* For the top right and left icons */
 .top-right{
-    position: absolute; /* Positions the element absolutely */
-    top: 0; /* Positions the element at the top of its containing element */
-    right: 0; /* Positions the element at the right of its containing element */
+    position: absolute; /* Positions the element absolutely within its containing element */        
+    top: 0; /* Positions the element at the top of its containing element */ 
+    right: 0; /* Positions the element to the right of its containing element */    
     padding: 10px; /* Increase padding for more space */
     margin-top: 20px; /* Increase margin for more space */
-    border: 2px solid black; /* Adds a border around the element */
-    color: white; /* Sets the color of the text */
-    background-color: #3574b7; /* Sets the background color of the element */
+    border: 2px solid black; /* Adds a black border around the elements */ 
+    color: white; /* Sets the text color to white */ 
+    background-color: #3574b7; /* Sets the background color of the elements */ 
 }
 
-/* Top-left positioned elements */
 .top-left{
-    position: absolute; /* Positions the element absolutely */
-    top: 0; /* Positions the element at the top of its containing element */
-    left: 0; /* Positions the element at the left of its containing element */
-    padding: 10px; /* Increase padding for more space */
+    position: absolute; /* Positions the element absolutely within its containing element */    
+    top: 0; /* Positions the element at the top of its containing element */        
+    left: 0; /* Positions the element to the left of its containing element */
+    padding: 10px; /* Increase padding for more space */ 
     margin-top: 20px; /* Increase margin for more space */
-    border: 2px solid black; /* Adds a border around the element */
-    color: white; /* Sets the color of the text */
-    background-color: #3574b7; /* Sets the background color of the element */
+    border: 2px solid black; /* Adds a black border around the elements */
+    color: white; /* Sets the text color to white */
+    background-color: #3574b7; /* Sets the background color of the elements */
 }
 
 /* For the phone and email icons */
 .phone-icon, .email-icon {
     width: 20px; /* Reduce the size of the icons */
-    height: auto; /* Maintain the aspect ratio */
+    height: auto;
     margin-right: 10px; /* Space between icon and text */
 }
 
@@ -93,17 +94,18 @@ body{
 }
 
 
+
 .nav-buttons button{
     background-color: rgb(50, 216, 191) ; /* Sets the background color of the buttons */
-    color: white; /* Sets the color of the text */
+    color: white; /* Sets the color of the buttons */
     border: none; /* Removes the border */
     padding: 10px; /* Adds padding to the buttons */
-    cursor: pointer; /* Changes the cursor to a pointer */
-    font-size: 15px; /* Sets the font size of the text */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the buttons */
+    font-size: 15px; /* Sets the font size of the buttons */
 }
 
 .nav-buttons button:hover{
-    background-color: rgb(5, 90, 90) ; /* Sets the background color of the buttons on hover */
+    background-color: rgb(5, 90, 90) ; /* Sets the background color of the buttons when hovering over them */
 }
 
 /* Styling for the hamburger menu icon */
@@ -112,103 +114,144 @@ script, .hamburger-menu{
 }
 
 
-/*form header styling*/
-.pharmacy{
+/* Styles for the doctors grid */ 
+.Medicines-grid{
+    display: grid; /* Uses grid layout for the doctors grid */
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+    grid-gap: 20px; /* Adds spacing between the doctors */
+    justify-items: center; /* Centers the doctors horizontally */ 
+    margin-top: 70px; /* Adds space above the grid */
+    margin-bottom: 100px; /* Adds space below the grid */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.Medicine{
+    background-color: rgba(234, 234, 234, 0.911); /* Sets the background color of the doctors */
+    padding: 20px; /* Adds padding to the doctors */
+    border: 1px solid #ccc; /* Adds a border to the doctors */
+    border-radius: 5px; /* Rounds the corners of the doctors */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a shadow to the doctors */
     text-align: center; /* Centers the text */
-    margin-top: 10px; /* Adds space above the text */
-    color: #0f80f9; /* Sets the color of the text */
+    width: 300px; /* Sets the width of the doctors */
 }
 
-/*form text styling*/
-.text h2{
-    padding: 10px; /* Adds padding to the text */
+.Medicine:hover{
+    transform: translateY(-5px); /* Moves the doctors up on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow to the doctors on hover */
+    background-color: #fff;
 }
 
-/*pharmacy description styling*/
-.text p{
-    padding: 10px; /* Adds padding to the text */
-    text-align: justify; /* Justifies the text */
-    line-height: 1.5; /* Adds space between lines */
+.Medicine img{
+    width: 200px; /* Sets the width of the image */
+    height: 200px; /* Sets the height of the image */
+    margin-bottom: 10px; /* Adds space below the image */
 }
 
-/*form body styling*/
-main{
-    max-width: 800px; /* Sets the maximum width of the form */
-    margin: 100px auto; /* Centers the form */
-    background-color: white; /* Sets the background color of the form */
-    padding: 20px; /* Adds padding to the form */
-    box-shadow: 0px 0px 10px black; /* Adds a shadow to the form */
+
+.Medicine h3{
+    font-size: 1.2em; /* Sets the font size of the text */ 
+    margin-bottom: 10px; /* Adds space below the text */
+    color: #333; /* Sets the color of the text */
 }
 
-/* Styling for each section inside the form */
-form section{
-    margin-bottom: 30px; /* Adds space between sections */
-}
-
-/* Styling for the subheadings inside the form sections */
-form section h2{
-    color: #0f80f9; /* Sets the color of the subheading */
-    border-bottom: 2px solid #0f80f9; /* Adds a border to the subheading */
-    padding-bottom: 10px; /* Adds space between the subheading and the text */
-    margin-bottom: 15px; /* Adds space between the subheading and the text */
-}
-
-/* Styling for the labels in the form */
-label{ 
-    display: block; /* Uses flexbox layout for the label */
-    margin-bottom: 5px; /* Adds space between the label and the input */
+.Medicine p{
+    font-size: 0.9em; /* Sets the font size of the text */
+    color: #666; /* Sets the color of the text */
+    text-align: center; /* Aligns the text to the left */
     font-weight: bold; /* Makes the text bold */
 }
 
-/* Styling for the inputs in the form */
-input, select, textarea{
-    width: 50%; /* Sets the width of the input to 50% */
-    padding: 10px; /* Adds padding to the input */
-    border-radius: 5px; /* Rounds the corners of the input */
-    border: 1px solid #ddd; /* Adds a border to the input */
-    margin-bottom: 15px; /* Adds space between the input and the text */
-    font-size: 16px; /* Sets the font size of the text */
+
+/* Styles for the text link */
+.link-container{
+    text-align: center; /* Centers the text */
+    margin-bottom: 100px; /* Adds space below the text */
+    
 }
 
-/* Styling for the checkbox elements in the form */
-input[type="checkbox"]{
-    width: auto; /* Sets the width of the checkbox to auto */
-    margin-right: 10px; /* Adds space between the checkbox and the text */
+.link{
+    text-decoration: none; /* Removes the underline */
+    color: rgb(18, 34, 176); /* Sets the color of the text */
+    text-align: center; /* Centers the text */
 }
 
-/* Styling for the captcha container */
-.captcha{
-    display: flex; /* Uses flexbox layout for the captcha container */
-    align-items: center; /* Vertically centers items */
+.link:hover{
+    text-decoration: underline; /* Adds an underline when hovering over the text */
 }
 
-/*styling for button elements*/
-button{
-    background-color: #0f80f9; /* Sets the background color of the button */
-    color: white; /* Sets the color of the text */
-    border: none; /* Removes the border of the button */
-    padding: 15px 20px; /* Adds padding to the button */
-    cursor: pointer; /* Changes the cursor to a pointer */
-    font-size: 16px; /* Sets the font size of the text */
+/* Cart Table Styles */
+#cart-table {
+    width: 100%; /* Sets the width of the table */
+    border-collapse: collapse; /* Removes the border collapse */
+    margin-top: 20px; /* Adds space above the table */
 }
 
-/* Styling for button hover effect */
-button:hover{
-    background-color: #0059b3; /* Sets the background color of the button on hover */
+#cart-table th, #cart-table td {
+    border: 2px solid black; /* Adds a border to the table cells */
+    padding: 10px; /* Adds padding to the table cells */
+    text-align: left; /* Aligns the text to the left */
 }
 
-/* Styling for the submit button */
-.btn{
-    background-color: #0f80f9; /* Sets the background color of the button */
-    color: white; /* Sets the color of the text */
-    border: none; /* Removes the border of the button */
-    padding: 15px 20px; /* Adds padding to the button */
-    cursor: pointer; /* Changes the cursor to a pointer */
-    font-size: 16px; /* Sets the font size of the text */
-    border-radius: 6px; /* Rounds the corners of the button with a 6px radius */
+#cart-table th {
+    background-color: #0078d7; /* Sets the background color of the table headers */
+    color: white; /* Sets the color of the table headers */
 }
 
-/* Footer styling */
+tfoot td {
+    font-weight: bold; /* Makes the total amount bold */;
+}
+
+.remove-item {
+    background-color: #0078d7; /* Sets the background color of the remove button */
+    color: white; /* Sets the color of the remove button */
+    border: none; /* Removes the border */
+    padding: 5px 10px; /* Adds padding to the remove button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the remove button */
+    margin-left: 50px; /* Adds space to the left of the remove button */
+    border-radius: 5px; /* Rounds the corners of the remove button */
+}
+
+
+.button-container button {
+    background-color: #0078d7; /* Sets the background color of the button */
+    color: white; /* Sets the color of the button */
+    border: none; /* Removes the border */
+    padding: 10px 15px; /* Adds padding to the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    margin: 5px 0; /* Adds space between the buttons */
+} 
+
+.add-to-cart {
+    background-color: #0078d7; /* Sets the background color of the button */
+    color: white; /* Sets the color of the button */
+    border: none; /* Removes the border */
+    padding: 10px 15px; /* Adds padding to the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    margin: 5px 0; /* Adds space between the buttons */
+}
+
+button:hover {
+    background-color: #005fa3; /* Sets the background color of the button when hovering */
+}
+
+/*#add-to-cart {
+    position: absolute; /* Positions the element absolutely within its containing element 
+    right: 20px;  Positions the element to the right of its containing element 
+    padding: 10px 20px; Adds padding to the element 
+    margin-top: -30px;  Adds space above the element 
+}*/
+
+.button-container{
+    position: absolute; /* Positions the element absolutely within its containing element */
+    right: 20px; /* Positions the element to the right of its containing element */
+    margin-top: 20px; /* Adds space above the element */
+    
+    
+}
+
+/* Footer styles */
 footer{
     width: 100%; /* Sets the width of the footer */
     border-top: 1px solid #000; /* Adds a border to the footer */
@@ -217,6 +260,7 @@ footer{
     font-family: Arial, sans-serif; /* Sets the font family of the footer */
     color: #333; /* Sets the color of the footer text */
     background-color: #0f80f9; /* Sets the background color of the footer */
+    margin-top: 120px; /* Adds margin to the top of the footer */
 }
 
 /* Footer logo container */
@@ -224,99 +268,96 @@ footer{
     display: flex; /* Uses flexbox layout for the logo and text */
     align-items: center; /* Aligns the logo and text vertically */
     justify-content: center; /* Aligns the logo and text horizontally */
-    flex-grow: 1; /* Makes the logo and text take up the remaining space */
+    flex-grow: 1; /* Expands the logo and text to fill the available space */
 }
 
 .logo-image{
-    margin-right: 10px; /* Adds space between the logo and the text */
-    max-height: 35px; /* Sets the maximum height of the logo */
+    margin-right: 10px; /* Space between icon and text */
+    max-height: 35px; /* Sets the maximum height of the icon */
 }
 
 /* Footer container with alignment and padding */
 .footer-container{
-    background-color: #0f80f9; /* Sets the background color of the footer container */
-    display: flex; /* Uses flexbox layout for the footer container */
-    justify-content: space-between; /* Aligns the footer content horizontally */
-    align-items: center; /* Aligns the footer content vertically */
-    max-width: 1200px; /* Sets the maximum width of the footer container */
-    padding-left: 250px; /* Adds padding to the left of the footer container */
-    padding-right: 250px; /* Adds padding to the right of the footer container */
+    background-color: #0f80f9; /* Sets the background color of the footer */
+    display: flex; /* Uses flexbox layout for the footer */
+    justify-content: space-between; /* Aligns the footer items horizontally */
+    align-items: center; /* Aligns the footer items vertically */
+    max-width: 1200px; /* Sets the maximum width of the footer */
+    padding-left: 250px; /* Adds padding to the footer */
+    padding-right: 250px; /* Adds padding to the footer */
 }
 
 /* Footer left section styling */
 .footer-left{
-    font-size: 20px; /* Sets the font size of the text */
-    font-weight: bold; /* Sets the font weight of the text */
-    color: white; /* Sets the color of the text */
+    font-size: 20px; /* Sets the font size of the footer text */
+    font-weight: bold; /* Sets the font weight of the footer text */
+    color: white; /* Sets the color of the footer text */
     letter-spacing: 2px; /* Adds spacing between the letters */
-    border: 3px solid black; /* Adds a border to the text */
-    padding: 8px; /* Adds padding to the text */
-    background-color: #013c7b;  /* Sets the background color of the text */
+    border: 3px solid black; /* Adds a border to the footer text */
+    padding: 8px; /* Adds padding to the footer text */
+    background-color: #013c7b;  
+    
 }
 
 /* Footer box styling for text alignment */
 .logo-box{
-    text-align: center; /* Centers the text */
-    white-space: normal; /* Allows the text to wrap */
+    text-align: center; /* Centers the footer text */
+    white-space: normal; /* Allows the text to wrap around the box */
 }
 
 /* Footer right section styling */
 .footer-right h4{
-    font-size: 18px; /* Sets the font size of the text */
-    color: white; /* Sets the color of the text */
-    margin-bottom: 10px; /* Adds space below the text */
+    font-size: 18px; /* Sets the font size of the footer text */
+    color: white; /* Sets the color of the footer text */
+    margin-bottom: 10px; /* Adds space below the footer text */
 }
 
 .footer-right ul li{
-    margin-bottom: 5px; /* Adds space below the list items */
+    margin-bottom: 5px; /* Adds space below the footer text */
 }
 
 
 .footer-right ul li a{
-    text-decoration: none; /* Removes the underline */
-    color: white; /* Sets the color of the text */
-    font-size: 16px; /* Sets the font size of the text */
+    text-decoration: none; /* Removes the underline from the footer text */
+    color: white; /* Sets the color of the footer text */
+    font-size: 16px; /* Sets the font size of the footer text */
 }
 
 .footer-right ul li a:hover{
-    color: rgb(210, 207, 207); /* Sets the hover color of the text */
+    color: rgb(210, 207, 207); /* Sets the hover color of the footer text */
 }
 
-/* Footer hover effect */
 .footer:hover{
     background-color: #f0f0f0; /* Sets the background color on hover */
 }
 
-/* Media queries for monile responsive design */
-@media only screen and (max-width: 768px) {
+/* Media queries for mobile responsive design */
+@media (max-width: 768px) {
     
     /* Adjust body layout for mobile */
     html{
         overflow-x: hidden; /* Hide horizontal scrolling */
     
     }
-    /* Adjust header layout for mobile */
     .header {
         flex-direction: column; /* Stack header items vertically */
         height: auto; /* Set header height to auto */
-        text-align: center; /* Center header items */
+        text-align: center; /* Center header text */
     }
 
     .logo-item h1 {
         font-size: 24px; /* Adjust header font size */
     }
 
-    .top-left, .top-right {
-        position: static; /* Remove top-left and top-right positioning */
-        margin: 0; /* Remove margin */
-        text-align: center; /* Center header items */
-        padding: 5px; /* Add padding */
-        border: none; /* Remove border */
-        background-color: transparent; /* Remove background color */
-        display: none; /* Hide top-left and top-right items */
+    .top-right, .top-left {
+        position: static; /* Remove top-right and top-left positioning */
+        margin: 5px 0; /* Adjust top-right and top-left margins */
+        border: none; /* Remove top-right and top-left borders */
+        background-color: transparent; /* Remove top-right and top-left background color */
+        display: none; /* Hide top-right and top-left on mobile */
     }
 
-    /* Style for hamburger menu icon */
+    /* Adjust hamburger menu for mobile */
     .hamburger-menu, .menu-link {
         display: flex; /* Show hamburger icon in mobile */
         align-items: center; /* Center the hamburger icon vertically */
@@ -326,7 +367,7 @@ footer{
         padding-right: 15px; /* Add padding to the right */
         background-color: #007bff; /* Set the background color */
     }
-
+    
     .nav-buttons {
         display: none; /* Keep the nav menu hidden by default */
         flex-direction: column; /* Stack the navigation buttons vertically */
@@ -344,25 +385,30 @@ footer{
         font-size: 14px; /* Set the font size for each button */
     }
 
-    .pharmacy-image img {
-        height: auto; /* Ensures the image scales properly */
+    /* Adjust pharmacy image */
+    .pharmacy-image {
+        height: auto; /* Set pharmacy image height to auto */
         margin-top: 30px;
-    }   
+    }
 
-    /* Adjust main layout for mobile */
-    main {
-        padding: 15px; /* Adds padding to the main section */
-        margin: 0 10px; /* Adds margin to the main section */
-        box-shadow: none; /* Removes the box shadow */
+    /* Adjust doctor grid */
+    .Medicines-grid {
+        grid-template-columns: 1fr; /* Make doctor grid a single column */
+        margin-top: 20px; /* Add margin to top of grid */
+        margin-bottom: 50px; /* Add margin to bottom of grid */
     }
-    
-    /* Adjust form layout for mobile */
-    form section {
-        margin-bottom: 20px; /* Adds margin to the form section */
+
+    .Medicine {
+        width: 70%; /* Adjust doctor card width */
     }
-    /* Adjusting styling for the inputs in the form */
-    input, select, textarea {
-        width: 50%; /* Full width on smaller screens */
+
+    .Medicine img {
+        width: 100px; /* Adjust image width */
+        height: 100px; /* Adjust image height */
+    }
+
+    .link-container h2 {
+        font-size: 18px; /* Adjust font size for links */
     }
 
     /* Footer Layout */
