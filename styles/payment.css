@@ -1,0 +1,73 @@
+/* Payment Form Styles */
+/* General body styles */
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font family for the entire page */
+    margin: 0; /* Removes default margin around the body */
+    padding: 0; /* Removes default padding around the body */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    background-color: #beeaee; /* Sets the background color of the page */ 
+    overflow-x: hidden; /* Hides horizontal overflow */
+}
+
+/* Cart Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0078d7;
+    color: white;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#card-details label {
+    display: flex;
+    flex-direction: column;
+}
+
+#pay-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#pay-button:hover {
+    background-color: #218838;
+}
