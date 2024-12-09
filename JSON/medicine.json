@@ -1,0 +1,177 @@
+[
+    {
+        "category": "Analgesics",
+        "medicines": [
+            {
+                "name": "Paracetamol (Acetaminophen)",
+                "price": 15.00,
+                "image": "https://tiimg.tistatic.com/fp/1/007/809/paracetamol-acetaminophen-tablet-ip--353.jpg"
+            },
+            {
+                "name": "Ibuprofen",
+                "price": 25.00,
+                "image": "https://5.imimg.com/data5/SELLER/Default/2024/2/382574615/WG/JA/OB/208131972/ibuprofen-tablets-500x500.jpg"
+            },
+            {
+                "name": "Aspirin",
+                "price": 20.00,
+                "image": "https://spmc.gov.lk/?w=630&h=630&src=resources/259/p.jpg"
+            },
+            {
+                "name": "Diclofenac Sodium",
+                "price": 30.00,
+                "image": "https://spmc.gov.lk/?w=630&h=630&src=resources/158/p.jpg"
+            },
+            {
+                "name": "Naproxen",
+                "price": 35.00,
+                "image": "https://cdn.sanity.io/images/zbeduy22/production/5fe46385265eff296a97122704b03d7e9525da80-600x600.jpg"
+            },
+            {
+                "name": "Tramadol",
+                "price": 50.00,
+                "image": "https://smarthealer.pk/wp-content/uploads/2024/09/tramadol-capsule.webp"
+            }
+        ]
+    },
+    {
+        "category": "Antibiotics",
+        "medicines": [
+            {
+                "name": "Amoxicillin",
+                "price": 40.00,
+                "image": "https://k2pharmacy.ph/cdn/shop/files/Amoxicillin500mgCapsule_3-fotor-2024051015231_grande.jpg?v=1716177105"
+            },
+            {
+                "name": "Ciprofloxacin",
+                "price": 60.00,
+                "image": "https://fidson.com/wp-content/uploads/2022/09/Ciprofloxacin-500-768x768.png"
+            },
+            {
+                "name": "Doxycycline",
+                "price": 90.00,
+                "image": "https://images.ctfassets.net/fc84yqnhe77u/qqq9F5Un7NvVyQFupZZH9/9791652388fa60155fbd851c127ab1e9/mob.jpg?w=640&h=528&fl=progressive&q=70&fm=jpg"
+            },
+            {
+                "name": "Azithromycin",
+                "price": 100.00,
+                "image": "https://accessdoctor.co.uk/wp-content/uploads/2021/08/azithromycin.jpg"
+            },
+            {
+                "name": "Clindamycine",
+                "price": 120.00,
+                "image": "https://5.imimg.com/data5/SELLER/Default/2022/7/KO/CD/QT/38378827/clindamycin-150-mg-500x500.jpg"
+            },
+            {
+                "name": "Cephalexin",
+                "price": 70.00,
+                "image": "https://bepharco.com/Data/Sites/1/Product/8729/cephalexin.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Antidepressants",
+        "medicines": [
+            {
+                "name": "Fluoxetine",
+                "price": 120.00,
+                "image": "https://www.eridanushealth.com/wp-content/uploads/2020/07/Foxtine-40.jpg"
+            },
+            {
+                "name": "Sertraline",
+                "price": 150.00,
+                "image": "https://www.xalmeds.com/cdn/shop/files/Products.zip-2.png?v=1721870234"
+            },
+            {
+                "name": "Escitalopram",
+                "price": 220.00,
+                "image": "https://k2pharmacy.ph/cdn/shop/products/RiteMed_-Escitalopram-10mg-Tablets-Ritemed-Philippines-Inc.-1660654171_grande.jpg?v=1660654173"
+            },
+            {
+                "name": "Amitriptyline",
+                "price": 100.00,
+                "image": "https://medworksmedia.com/wp-content/uploads/2018/07/amitriptyline_1.png"
+            },
+            {
+                "name": "Citalopram",
+                "price": 180.00,
+                "image": "https://tradebrio.com/public/media/uploads/products/112806_Citalopram%20hydro%20bromide12.webp"
+            },
+            {
+                "name": "Duloxetine",
+                "price": 250.00,
+                "image": "https://5.imimg.com/data5/AL/LG/MY-6299000/duloxetine-30-mg-capsules-500x500.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Antihistamines",
+        "medicines": [
+            {
+                "name": "Cetirizine",
+                "price": 30.00,
+                "image": "https://www.xalmeds.com/cdn/shop/products/18A2ED00-4812-4473-8F86-B6B6725218B1.jpg?v=1665419276"
+            },
+            {
+                "name": "Loratadine",
+                "price": 25.00,
+                "image": "https://assets.unilab.com.ph/uploads/Common/Products/Allerta-Tablet/Allerta-Tablet-Product-Shot.png"
+            },
+            {
+                "name": "Fexofenadine",
+                "price": 50.00,
+                "image": "https://www.cloudpharmacy.co.uk/uploads/images/products/large/cloud-pharmacy-fexofenadine-fexofenadine-1576592627Fexofenadine.jpg"
+            },
+            {
+                "name": "Chlorpheniramine",
+                "price": 20.00,
+                "image": "https://www.astron.lk/assets/web/img/product-pics/products/a389102c347e948aa57557cf5639c8e8.jpg"
+            },
+            {
+                "name": "Diphenhydramine",
+                "price": 40.00,
+                "image": "https://d14bbfkcwbts4c.cloudfront.net/img/products/DA/da1ccc22-4af6-6506-5d5d-7a086bcaa6df_l.jpg"
+            },
+            {
+                "name": "Levocetirizine",
+                "price": 35.00,
+                "image": "https://accessdoctor.co.uk/wp-content/uploads/2022/04/levocetirizine-dihydrochloride.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Antihypertensives",
+        "medicines": [
+            {
+                "name": "Amlodipine",
+                "price": 45.00,
+                "image": "https://www.crescentpharma.com/wp-content/uploads/2020/02/Amlodipine_5mg-Tablets_28s_FF.png"
+            },
+            {
+                "name": "Losartan",
+                "price": 80.00,
+                "image": "https://test.troskit.com/wp-content/uploads/2022/12/losartan_potassium_100mg_pharma.jpg"
+            },
+            {
+                "name": "Hydrochlorothiazide",
+                "price": 35.00,
+                "image": "https://5.imimg.com/data5/SELLER/Default/2023/1/KB/LL/TU/29824675/hydrochlorothiazide-12-5-mg-500x500.jpg"
+            },
+            {
+                "name": "Lisinopril",
+                "price": 60.00,
+                "image": "https://d3ckuu7lxvlwp2.cloudfront.net/products/01J308R9EB3XWMKXW9PQWTNN9P.jpg"
+            },
+            {
+                "name": "Ramipril",
+                "price": 90.00,
+                "image": "https://www.assetpharmacy.com/wp-content/uploads/2017/09/Ramipril-5mg-Capsules-28-Capsules.jpg"
+            },
+            {
+                "name": "Propranolol",
+                "price": 70.00,
+                "image": "https://www.medsforless.co.uk/wp-content/uploads/2024/06/ezgif.com-webp-to-jpg-converter-2024-06-25T103252.953.jpg"
+            }
+        ]
+    }
+]
