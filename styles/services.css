@@ -138,7 +138,6 @@ script, .hamburger-menu{
     display: flex; /* Uses flexbox layout for the boxes */
     justify-content: center; /* Horizontally centers the boxes */
     flex-direction: column; /* Sets the direction of the boxes */
-    align-items: right; /* Sets the alignment of the boxes */
     text-align: left; /* Aligns text to the left */
     padding-top: 10px; /* Increase padding for more space */
     background-color: aliceblue; /* Sets the background color of the boxes */
