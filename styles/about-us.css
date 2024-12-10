@@ -178,8 +178,8 @@ th{
 }
 
 .styled-table th, .styled-table td{
+    border: 1px solid #000; /* Adds a border to the table cells */
     padding: 10px; /* Adds padding to the table cells */
-    background-color: #a0cbf8; /* Sets the background color of the table cells */
 }
 
 .styled-table th{
