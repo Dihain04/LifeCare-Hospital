@@ -122,8 +122,13 @@ script, .hamburger-menu{
 .hero img{
     object-fit: cover; /* Ensures that the image doesn't overflow the container */
 }
-/* Center-aligned text styling */
 
+.main-image{
+    width: 100%; 
+    height: auto;
+}
+
+/* Center-aligned text styling */
 .text{
     text-align: center; /* Centers the text */
 }
