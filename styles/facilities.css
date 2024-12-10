@@ -113,6 +113,15 @@ script, .hamburger-menu{
     display: none; /* Hides the hamburger menu icon */
 }
 
+.hidden{
+    display: none;
+}
+
+.main-image{
+    width: 100%; /* Taking the full width of the screen */
+    height: auto; /* Adjust height */
+}
+
 /* Facilities styling */
 .facilities-title{
     padding: 10px; /* Increase padding for more space */
