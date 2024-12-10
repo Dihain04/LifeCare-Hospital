@@ -113,6 +113,15 @@ script, .hamburger-menu{
     display: none; /* Hides the hamburger menu icon */
 }
 
+.hidden{
+    display: none;
+}
+
+.pharmacy-image{
+    width: 100%; /* Sets the width of the pharmacy image to 100% */
+    height: auto; /* Keeps the aspect ratio of the image */
+}
+
 
 /* Styles for the doctors grid */ 
 .Medicines-grid{
