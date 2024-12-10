@@ -123,9 +123,13 @@ script, .hamburger-menu{
     object-fit: cover; /* Ensures that the image doesn't overflow the container */
 }
 
+.hidden{
+    display: none;
+}
+
 .main-image{
-    width: 100%; 
-    height: auto;
+    width: 100%; /* Taking the full width of the screen */
+    height: auto; /* Adjust height */
 }
 
 /* Center-aligned text styling */
