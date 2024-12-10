@@ -108,6 +108,15 @@ script, .hamburger-menu{
     display: none;
 }
 
+.hidden{
+    display: none;
+}
+
+.hero-image{
+    width: 100%; /* Sets the width of the image */
+    height: auto; /* Adjusts the height to maintain the image's aspect ratio */
+}
+
 /*Text styling*/
 .text h2{
     padding: 10px; /* Increase padding for more space */
