@@ -112,6 +112,15 @@ script, .hamburger-menu{
     display: none; /* Hides the hamburger menu icon */
 }
 
+.hidden{
+    display: none;
+}
+
+.main-image{
+    width: 100%; /* Taking the full width of the screen */
+    height: auto; /* Adjust height */
+}
+
 /* Styling for the main content area */
 main{
     max-width: 800px; /* Sets the maximum width of the main content area */
