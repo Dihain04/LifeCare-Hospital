@@ -114,6 +114,15 @@ script, .hamburger-menu{
     display: none; /* Hides the hamburger menu icon */
 }
 
+.hidden{
+    display: none;
+}
+
+.main-image{
+    width: 100%; /* Taking the full width of the screen */
+    height: auto; /* Adjust Height */
+}
+
 /* Styling for h2 elements inside .text class */
 .text h2{
     padding: 10px; /* Adds padding to the text */
