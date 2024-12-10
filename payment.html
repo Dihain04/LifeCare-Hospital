@@ -57,6 +57,7 @@
             <label>
                 Payment Method:
                 <select id="payment-method" required>
+                    <option value="" disabled selected>Select Payment Method</option>
                     <option value="cash">Cash on Delivery</option>
                     <option value="card">Card Payment</option>
                 </select>
@@ -68,7 +69,7 @@
                 </label>
                 <label>
                     Expiry Date (MM/YYYY):
-                    <input type="month" id="expiry-date" placeholder="MM/YYYY" required>
+                    <input type="month" id="expiry-date" required>
                 </label>
                 <label>
                     CVV:
@@ -78,7 +79,7 @@
             <button type="button" id="pay-button">Pay</button>
         </form>
     </main>
+    <script src="JavaScript/payment.js"></script>
 </body>
-<script src="JavaScript/payment.js"></script>
 </html>
 
