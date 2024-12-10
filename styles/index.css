@@ -181,6 +181,10 @@ script, .hamburger-menu{
     
 }
 
+ol li{
+    margin-bottom: 15px; /* Adds margin to the bottom of the list items */
+}
+
 /* International patient care section styling */
 .international-patient-care{
     display: flex; /* Uses flexbox layout for the international patient care section */
