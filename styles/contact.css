@@ -140,7 +140,7 @@ form section{
     color: #0f80f9; /* Sets the color of the heading */
     border-bottom: 2px solid #0f80f9; /* Adds a border to the heading */
     padding-bottom: 50px; /* Adds space between the heading and the text */
-    margin-top: 15px; /* Adds space between the heading and the text */
+    margin-top: 20px; /* Adds space between the heading and the text */
     text-align: center; /* Centers the heading */
 }
 
