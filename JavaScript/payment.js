@@ -120,6 +120,12 @@ payButton.addEventListener('click', () => {
         return;
     }
 
+    // Validate payment method
+    if (!paymentType) {
+        alert('Please select a payment method.');
+        return;
+    }
+
     // Card payment validation
     if (paymentType === 'card') {
         const cardNumber = document.getElementById('card-number').value.trim();
