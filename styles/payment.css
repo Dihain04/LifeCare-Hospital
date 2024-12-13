@@ -75,8 +75,7 @@ form input, form select, form button {
 /* Styles for the text link */
 .link-container{
     text-align: center; /* Centers the text */
-    margin-bottom: 100px; /* Adds space below the text */
-    
+    margin-top: 50px; /* Adds space above the text */   
 }
 
 .link{
