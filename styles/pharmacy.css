@@ -239,18 +239,12 @@ tfoot td {
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
     border-radius: 5px; /* Rounds the corners of the button */
     margin: 5px 0; /* Adds space between the buttons */
+    margin-top: 20px; /* Adds space above the button */
 }
 
 button:hover {
     background-color: #005fa3; /* Sets the background color of the button when hovering */
 }
-
-/*#add-to-cart {
-    position: absolute; /* Positions the element absolutely within its containing element 
-    right: 20px;  Positions the element to the right of its containing element 
-    padding: 10px 20px; Adds padding to the element 
-    margin-top: -30px;  Adds space above the element 
-}*/
 
 .button-container{
     position: absolute; /* Positions the element absolutely within its containing element */
