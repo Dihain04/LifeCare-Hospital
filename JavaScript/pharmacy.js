@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <h3>${medicine.name}</h3>
                                 <p>LKR. ${medicine.price.toFixed(2)} (per tablet)</p>
                                 <label for="quantity-${medicine.name}" class="quantity-label">Quantity:</label>
-                                <input type="number" min="1" data-name="${medicine.name}" data-price="${medicine.price}" placeholder="Qty" step="1">
+                                <input type="number" min="1" id="quantity-${medicine.name}" data-name="${medicine.name}" data-price="${medicine.price}" placeholder="Qty" step="1" class="quantity-input">
                                 <button type="button" class="add-to-cart">Add to Cart</button>
                             </div>
                         `).join('')}
