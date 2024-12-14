@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Meta information-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeCare Hospital</title>
+
+    <!--Linking of external files for styling and icons-->
     <link rel="stylesheet" href="styles/payment.css">
     <link rel="icon" type="image/LIFECare-HOSPITAL.png" href="Images/LIFECare-HOSPITAL.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,9 +18,11 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <!--Page Header-->
     <header>
         <h1>Payment</h1>
     </header>
+    <!--Main Section-->
     <main>
         <h2>Your Order</h2>
         <table id="order-summary">
@@ -39,7 +44,7 @@
                 </tr>
             </tfoot>
         </table>
-
+        <!--Payment Form-->
         <h2>Enter Your Details</h2>
         <form id="payment-form">
             <label>
@@ -62,6 +67,7 @@
                     <option value="card">Card Payment</option>
                 </select>
             </label>
+            <!--Card Details-->
             <div id="card-details" style="display: none;">
                 <label>
                     Card Number:
@@ -83,6 +89,7 @@
             <h2><a href="pharmacy.html" class="link">Click Back to Pharmacy</a></h2>
         </div>
     </main>
+     <!-- JavaScript link for payment page -->
     <script src="JavaScript/payment.js"></script>
 </body>
 </html>
