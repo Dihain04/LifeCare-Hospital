@@ -35,7 +35,7 @@ paymentMethod.addEventListener('change', () => {
 
 // Validate phone number format (using regular expression)
 function validatePhoneNumber(phoneNumber) {
-    const phoneRegex = /^\+?\d{1,4}?[\d\s\-]{7,15}$/;
+    const phoneRegex = /^\d{10}$/;
     return phoneRegex.test(phoneNumber);
 }
 
